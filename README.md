@@ -51,14 +51,14 @@ Modify the database schema/username/password in the GCDService project -> src/re
 
 Create the following tables using the DDL commands.
 
-CREATE TABLE `gcd` (
+CREATE TABLE `gcd`.`gcd` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `userkey` varchar(52) DEFAULT NULL,
   `gcd` int(12) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8;
 
-CREATE TABLE `inputnumber` (
+CREATE TABLE `gcd`.`inputnumber` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `userkey` varchar(52) DEFAULT NULL,
   `number1` int(11) DEFAULT NULL,
