@@ -111,3 +111,5 @@ http://localhost:8080/gcdrest/rest/push (POST request with "key:"anystring" pass
 http://localhost:8080/gcdsoap/webservices/gcdService.wsdl
 
 The GCD soapservice returns a zero when there are no more elements in queue to be consumed.
+
+jUnit - Junit is written in gcdcommon project to prove the 20 concurrent users. The test will create 30 users, but will only grant sessions to first 20 users. After remaining inactive for a minute, other users will be granted sessions.
