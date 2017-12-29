@@ -33,15 +33,15 @@ After unzipping, you should be able to view four projects
 • gcdear
 
 
-Goto MyGCD-master folder and run from cmd prompt "mvn clean install -DskipTests=true".
+1) Goto MyGCD-master folder and run from cmd prompt "mvn clean install -DskipTests=true".
 
-.ear file will be generated in gcdear project's target folder.
+2) .ear file will be generated in gcdear project's target folder.
 
-Install JBOSS AS 7 into any folder of your machine. Let that folder be your jboss_home folder.
+3) Install JBOSS AS 7 into any folder of your machine. Let that folder be your jboss_home folder.
 
-Place the .ear file in jboss_server_home/standalone/deployments folder.
+4) Place the .ear file in jboss_server_home/standalone/deployments folder.
 
-Start the server by going to jboss_home/bin and type standalone.bat
+5) Start the server by going to jboss_home/bin and type standalone.bat
 
 ## Database setup
 
