@@ -30,7 +30,7 @@ After unzipping, you should be able to view four projects
 
 Download MySQL 5.x and log in as a root user. 
 
-Modify the database schema/username/password in the GCDService project -> src/resource/jdbc.properties 
+Modify the database schema/username/password in the gcdcommon project -> src/resource/jdbc.properties 
 
 Create the following tables using the DDL commands.
 
