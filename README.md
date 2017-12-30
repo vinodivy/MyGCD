@@ -53,6 +53,8 @@ CREATE TABLE `gcd`.`inputnumber` (
 The userkey column in each database will hold the user's generated session key. 
 This key will be used in the application's session to check the number of concurrent users in the system.
 
+## jUnit - Junit is written in gcdcommon project to prove the 20 concurrent users. The test will create 30 users, but will only grant sessions to first 20 users. After remaining inactive for a minute, other users will be granted sessions.
+
 ## ActiveMQ setup
 
 Download ActiveMQ from http://activemq.apache.org/activemq-5152-release.html
@@ -85,7 +87,7 @@ For local deployment:
 
 http://localhost:8080/gcdrest/rest//list
 
-http://localhost:8080/gcdrest/rest/push (POST request with "key:"anystring" passed as a header)
+http://localhost:8080/gcdrest/rest/push (POST request with "key:"anystring" passed as a header. This is unique for each user)
 
 (Example: http://localhost:8080/gcdrest/rest/push?i1=20&i2=16 (request header key:abcdefg. This is optional, in which case each POST will be considered as a new user request)
 
@@ -94,5 +96,3 @@ http://localhost:8080/gcdrest/rest/push (POST request with "key:"anystring" pass
 http://localhost:8080/gcdsoap/webservices/gcdService.wsdl
 
 The GCD soapservice returns a zero when there are no more elements in queue to be consumed.
-
-jUnit - Junit is written in gcdcommon project to prove the 20 concurrent users. The test will create 30 users, but will only grant sessions to first 20 users. After remaining inactive for a minute, other users will be granted sessions.
