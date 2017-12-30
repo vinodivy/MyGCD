@@ -1,23 +1,5 @@
 # MyGCD
 
-# Project tech stack involves 
-
-Java 8,
-
-Maven 3.5,
-
-Spring 4.1.4,
-
-Hibernate 4.1.9,
-
-MySQL 5 +,
-
-ActiveMQ 5.15.2,
-
-JBOSS AS 7.0.0 Final
-
-The system supports 20 concurrent users at any point of time.
-
 # Deployment methods:
 
 Download the zip package from git and unzip.
@@ -32,6 +14,7 @@ After unzipping, you should be able to view four projects
 
 • gcdear
 
+## Install JBOSS AS 7, MySQL 5.x, ActiveMQ 5.15.2
 
 1) Goto MyGCD-master folder and run from cmd prompt "mvn clean install -DskipTests=true".
 
