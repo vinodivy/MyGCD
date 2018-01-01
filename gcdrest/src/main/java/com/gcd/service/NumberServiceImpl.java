@@ -31,7 +31,6 @@ public class NumberServiceImpl implements NumberService {
 	public List<InputNumber> list(String key) {
 		log.debug("Invoking the Number service list method..");
 		sessionController.watchUserSession(key);
-		//List<InputNumber> numberList = numberDao.list();
 		List<InputNumber> numberList = numberDao.list();
 		return numberList;
 	}
