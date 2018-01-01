@@ -18,7 +18,6 @@ public class NumberDao {
 	
 	@Transactional
 	public void push(InputNumber inputNumber){
-		System.out.println("EM value is %%%%%%%% "+em);
 		em.persist(inputNumber);
 	}
 	
