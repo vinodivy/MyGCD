@@ -31,7 +31,6 @@ public class NumberServiceImpl implements NumberService {
 	public List<InputNumber> list(String key) {
 		log.debug("Invoking the Number service list method..");
 		sessionController.watchUserSession(key);
-		System.out.println("Key from list "+key);
 		//List<InputNumber> numberList = numberDao.list();
 		List<InputNumber> numberList = numberDao.list();
 		return numberList;
@@ -44,10 +43,8 @@ public class NumberServiceImpl implements NumberService {
 		number.setNumber1(i1);
 		number.setNumber2(i2);
 		number.setUserkey(key);
-		System.out.println("key from push "+key);
 		
 		sessionController.watchUserSession(key);
-		//numberDao.push(number);	
 		numberDao.push(number);	
 		
 		log.info("Pushing the numbers to Queue...");		
