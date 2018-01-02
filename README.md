@@ -6,25 +6,13 @@ Download the zip package from git and unzip.
 
 After unzipping, you should be able to view four projects
 
-• gcdcommon
+• commons
 
 • gcdrest
 
 • gcdsoap
 
 • gcdear
-
-## Install JBOSS AS 7, MySQL 5.x, ActiveMQ 5.15.2
-
-1) Goto MyGCD-master folder and run from cmd prompt "mvn clean install -DskipTests=true".
-
-2) .ear file will be generated in gcdear project's target folder.
-
-3) Install JBOSS AS 7 into any folder of your machine. Let that folder be your jboss_home folder.
-
-4) Place the .ear file in jboss_server_home/standalone/deployments folder.
-
-5) Start the server by going to jboss_home/bin and type standalone.bat
 
 ## Database setup
 
@@ -62,6 +50,20 @@ Download ActiveMQ from http://activemq.apache.org/activemq-5152-release.html
 Extract the folder and goto bin folder
 
 type "activemq start"
+
+## Install JBOSS AS 7, MySQL 5.x, ActiveMQ 5.15.2
+
+1) Goto MyGCD-master folder and run from cmd prompt "mvn clean install -DskipTests=true".
+
+2) .ear file will be generated in gcdear project's target folder.
+
+3) Install JBOSS AS 7 into any folder of your machine. Let that folder be your jboss_home folder.
+
+4) Place the .ear file in jboss_server_home/standalone/deployments folder.
+
+5) Start the server by going to jboss_home/bin and type standalone.bat
+
+## Services
 
 The project exposes two APIS - one is a restful webservice and the other is SOAP webservice.
 
