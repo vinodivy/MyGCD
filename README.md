@@ -18,7 +18,7 @@ After unzipping, you should be able to view four projects
 
 Download MySQL 5.x and log in as a root user. 
 
-Modify the database schema/username/password in the gcdcommon project -> src/resource/jdbc.properties 
+Modify the database schema/username/password in the commons project -> src/resource/jdbc.properties 
 
 Create the following tables using the DDL commands.
 
@@ -41,7 +41,7 @@ CREATE TABLE `gcd`.`inputnumber` (
 The userkey column in each database will hold the user's generated session key. 
 This key will be used in the application's session to check the number of concurrent users in the system.
 
-## jUnit - Junit is written in gcdcommon project to prove the 20 concurrent users. The test will create 30 users, but will only grant sessions to first 20 users. After remaining inactive for a minute, other users will be granted sessions.
+## jUnit - Junit is written in common project to prove the 20 concurrent users. The test will create 30 users, but will only grant sessions to first 20 users. After remaining inactive for a minute, other users will be granted sessions.
 
 ## ActiveMQ setup
 
@@ -50,6 +50,8 @@ Download ActiveMQ from http://activemq.apache.org/activemq-5152-release.html
 Extract the folder and goto bin folder
 
 type "activemq start"
+
+The project code will create a queue called "GCDQueue" for storing and retrieving data.
 
 ## Install JBOSS AS 7, MySQL 5.x, ActiveMQ 5.15.2
 
