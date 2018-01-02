@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.gcd</groupId>
   <artifactId>parent</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>pom</packaging>
   <modules>
     <module>gcdrest</module>
     <module>gcdsoap</module>
     <module>gcdear</module>
-    <module>gcdcommon</module>
+    <module>commons</module>
   </modules>
   <dependencies>
 
